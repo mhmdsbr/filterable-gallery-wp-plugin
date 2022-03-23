@@ -1,0 +1,107 @@
+.jrg-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.jrg-col {
+    width: calc(100%/3);
+    text-align: center;
+    border-radius: 15px;
+    background-color: #f4f2f2;
+    padding: 8px 0px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.jrg-col select {
+    width: 80%;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    background-color: #f4f2f2;
+
+}
+.jrg-col select option {
+    border: none;
+    background-color: #f4f2f2;
+}
+.jrg-filter-container {
+    margin-bottom: 3vw;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 17%);
+    padding: 25px 5px;
+    border-radius: 15px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 42px;
+    background-color: white;
+}
+.jrg-gallery-items {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px 5px;
+}
+.jrg-gallery-item {
+    height: 14rem;
+    overflow: hidden;
+    transition: all 500ms ;
+}
+.jrg-gallery-item img {
+    transition: all 500ms;
+}
+.jrg-gallery-item img:hover {
+    transition: all 500ms;
+    transform: scale(0.975);
+    overflow: hidden;
+}
+.mfp-figure figure figcaption {
+    position: absolute;
+    width: 100%;
+    top: 79px;
+    left: 102%;
+}
+.mfp-bottom-bar .mfp-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 1.3em !important;
+}
+.mfp-bottom-bar .mfp-counter {
+    display: none;
+}
+.jrg-country .nice-select .current::before  {
+    content: "\e0e2";
+    font-family: "ETmodules" !important;
+    position: relative;
+    left: -4px;
+    top: 0;
+}
+.jrg-city .nice-select .current::before{
+    content: "\e0ef";
+   font-family: "ETmodules" !important;
+    position: relative;
+    left: -4px;
+    top: 0;
+}
+.jrg-year .nice-select .current::before{
+    content: "\e023";
+    font-family: "ETmodules" !important;
+    position: relative;
+    left: -4px;
+    top: 0;
+}
+.jrg-col .nice-select {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    background-color: #f4f2f2;
+}
+.nice-select:active, .nice-select.open, .nice-select:focus {
+    border: none;
+    background-color: #f4f2f2;
+}
+.jrg-col .nice-select .list {
+    width: 100%;
+}
